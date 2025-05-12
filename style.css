@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #174e72;
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #174e72;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #174e72;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.sobremim {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.imagemFOTO {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projeto-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: translateY(-5px);
+}
+
+.imagemPROJETOS {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projeto-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contatos img {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.contatos img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: orange;
+    height: 150px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobremim {
+        margin: 0;
+    }
+}
